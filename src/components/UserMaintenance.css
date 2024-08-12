@@ -1,0 +1,75 @@
+.user-maintenance-container {
+    padding: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters input,
+  .filters select,
+  .filters button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .filters button {
+    background-color: #48C9B0;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .filters button:hover {
+    background-color: #1abc9c;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .user-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .user-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .user-table button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .user-table button:hover {
+    opacity: 0.8;
+  }
+  
+  .user-table button:nth-child(1) {
+    background-color: #3498db; /* Editar */
+  }
+  
+  .user-table button:nth-child(2) {
+    background-color: #e74c3c; /* Inactivar */
+  }
+  
+  .user-table button:nth-child(3) {
+    background-color: #e74c3c; /* Eliminar */
+  }
+  

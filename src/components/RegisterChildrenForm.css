@@ -1,182 +1,259 @@
-/* src/components/RegisterChildrenForm.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-.register-children-form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: url('../assets/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
+/* RegisterChildrenForm.css */
 
 .register-children-form {
-  max-width: 600px;
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto', sans-serif;
-}
-
-.register-children-form h2 {
-  margin-bottom: 20px;
-  color: #A569BD;
-  text-align: center;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.input-icon {
-  margin-bottom: 15px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 80vh; /* Ajusta según sea necesario */
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
+  
 }
 
-.input-icon label {
-  margin-bottom: 5px;
-  display: block;
-}
-
-.input-icon input,
-.input-icon select,
-.input-icon textarea {
+/* Contenedor principal del formulario */
+.register-children-form-container {
+  position: relative; 
   width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 90px;
+  font-family: 'Roboto', sans-serif;
+  background: url('../assets/background.jpg') no-repeat center center;
+  background-size: cover;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* Pseudo-elemento para la capa de opacidad sobre la imagen de fondo */
+.register-children-form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Capa blanca con opacidad para atenuar la imagen */
+  z-index: -1; /* Asegúrate de que el pseudo-elemento esté detrás del contenido */
+}
+
+h2 {
+  text-align: center;
   color: #A569BD;
-  font-family: 'Roboto', sans-serif; /* Asegura que la fuente sea coherente */
 }
 
-.input-icon input[type="file"] {
-  padding: 0;
-}
-
-.photo-preview {
-  max-width: 100%;
-  max-height: 200px;
-  border: 1px solid #ccc;
-  margin-top: 10px;
-}
-
-.person-group,
-.contact-group {
-  margin-bottom: 15px;
-}
-
-.person-group input,
-.contact-group input {
-  margin-bottom: 5px;
-}
-
-.add-person-button,
-.add-child-button {
-  background-color: #38db46; /* Color verde para los botones de agregar */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 6px; /* Botones más pequeños */
-  cursor: pointer;
-  font-size: 14px; /* Tamaño de fuente más pequeño */
-  transition: background-color 0.3s;
-}
-
-.add-person-button:hover,
-.add-child-button:hover {
-  background-color: #38db46; /* Mismo color verde en hover */
-}
-
-.remove-person-button,
-.remove-child-button {
-  background-color: #ff4d4d; /* Color rojo para los botones de eliminar */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 6px; /* Botones más pequeños */
-  cursor: pointer;
-  font-size: 14px; /* Tamaño de fuente más pequeño */
-  transition: background-color 0.3s;
-}
-
-.remove-person-button:hover,
-.remove-child-button:hover {
-  background-color: #ff3333; /* Color rojo más oscuro en hover */
-}
-
+/* Botones principales */
 .button-group {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px; /* Aumenta el espacio entre los botones */
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .button-group button {
-  width: 48%;
-  padding: 10px;
-  background-color: #48C9B0;
-  color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  color: #fff;
+  background-color: #48C9B0;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
 }
 
 .button-group button:hover {
-  background-color: #5ad8bf;
+  background-color: #1abc9c;
 }
 
-.button-group button[type="button"] {
+/* Estilos del formulario */
+.register-children-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-icon label {
+  flex: 0 0 220px; /* Incrementado para mayor claridad */
+  font-weight: bold;
+}
+
+.input-icon input,
+.input-icon select,
+.input-icon textarea {
+  flex: 1;
+  padding: 12px; /* Incrementado para mayor espacio */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #A569BD;
+}
+
+.input-icon textarea {
+  resize: vertical;
+  min-height: 40px; /* Aumentado para más espacio */
+}
+
+.photo-preview {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.photo-preview-table {
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Estilos de la tabla */
+.children-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.children-table th,
+.children-table td {
+  padding: 14px; /* Incrementado para mayor espacio */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.children-table th {
+  background-color: #f4f4f4;
+}
+
+.children-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Ajustes para Personas Autorizadas y Contactos de Emergencia */
+.person-group,
+.contact-group {
+  border: 1px solid #ddd;
+  padding: 20px; /* Incrementado para mayor espacio */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.95); /* Más transparencia para mejor visualización */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Incrementada la sombra para mayor profundidad */
+}
+
+.person-group .input-icon,
+.contact-group .input-icon {
+  margin-bottom: 15px; /* Incrementado el espacio entre campos */
+}
+
+.remove-person-button,
+.add-person-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.remove-person-button {
+  background-color: #e74c3c;
+}
+
+.remove-person-button:hover {
+  background-color: #c0392b;
+}
+
+.add-person-button {
+  background-color: #3498db;
+}
+
+.add-person-button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para las miniaturas de fotos en la tabla */
+.children-table .photo-thumbnail {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Estilos para los botones en la misma línea */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button-container button[type="submit"] {
+  background-color: #48C9B0;
+}
+
+.button-container button[type="submit"]:hover {
+  background-color: #1abc9c;
+}
+
+.button-container button[type="button"] {
   background-color: #A569BD;
 }
 
-.button-group button[type="button"]:hover {
+.button-container button[type="button"]:hover {
   background-color: #d481f5;
 }
 
-.add-child-button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-top: 20px;
+.delete-button {
+  background-color: #e74c3c; /* Rojo */
 }
 
-.add-child-button {
-  margin-bottom: 10px; /* Espacio entre los botones */
+.delete-button:hover {
+  background-color: #c0392b; /* Rojo más oscuro */
 }
 
-textarea[name="specialNeeds"] {
-  color: #555; /* Color del texto en el campo de necesidades especiales */
-  font-size: 14px; /* Tamaño de fuente del texto */
+.add-person-button {
+  background-color: #3498db; /* Azul */
 }
 
-/* src/components/RegisterChildrenForm.css */
+.add-person-button:hover {
+  background-color: #2980b9; /* Azul más oscuro */
+}
 
-/* Añade una clase para el contenedor de los botones de Agregar Niño y Eliminar Niño */
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 20px;
-  }
-  
-  .add-child-button {
-    margin-bottom: 10px; /* Espacio entre los botones */
-  }
-  
-  .remove-child-button {
-    margin-bottom: 10px; /* Espacio entre los botones */
-  }
+.edit-button {
+  background-color: #f1c40f; /* Amarillo */
+}
 
-  /* Asegúrate de ajustar el estilo según tu diseño */
-.age-text {
-    font-size: 14px;
-    color: #A569BD;
-    margin-top: 5px;
-    margin-left: 50px;
-  }
-  
+.edit-button:hover {
+  background-color: #f39c12; /* Amarillo más oscuro */
+}
+
+

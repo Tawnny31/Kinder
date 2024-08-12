@@ -57,7 +57,7 @@ const MainLayout = () => {
             <li><Link to="/financial-management">Gestión Financiera</Link></li>
             <li><Link to="/inventory">Inventario</Link></li>
             <li><Link to="/register">Registrar Usuario</Link></li>
-            <li><Link to="/user-management">Mantenimiento de Usuarios</Link></li>
+            <li><Link to="/user-maintenance">Mantenimiento de Usuarios</Link></li>
             <li><Link to="/records">Expedientes</Link></li>
             <li><Link to="/reports">Reportes</Link></li>
           </ul>
