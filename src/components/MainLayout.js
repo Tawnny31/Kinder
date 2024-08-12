@@ -51,15 +51,13 @@ const MainLayout = () => {
       <div className="content-container">
         <aside className="sidebar">
           <ul>
-            <li><Link to="/director">Directora</Link></li>
-            <li><Link to="/teachers">Maestras</Link></li>
-            <li><Link to="/parents">Padres de Familia</Link></li>
+            <li><Link to="/director">Administrativo</Link></li>            
             <li><Link to="/financial-management">Gestión Financiera</Link></li>
-            <li><Link to="/inventory">Inventario</Link></li>
-            <li><Link to="/register">Registrar Usuario</Link></li>
-            <li><Link to="/user-maintenance">Mantenimiento de Usuarios</Link></li>
-            <li><Link to="/records">Expedientes</Link></li>
-            <li><Link to="/reports">Reportes</Link></li>
+            <li><Link to="/inventory">Inventario</Link></li>            
+            <li><Link to="/teachers">Matrícula</Link></li>
+            <li><Link to="/register">Expediente</Link></li>
+            <li><Link to="/parents">Plataforma</Link></li>            
+            <li><Link to="/user-maintenance">Comunicación</Link></li>            
           </ul>
         </aside>
         <main className="main-content">
