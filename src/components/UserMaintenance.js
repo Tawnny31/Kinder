@@ -51,54 +51,78 @@ const UserMaintenance = () => {
     setSelectedUser(null);
   };
 
+  const handleCancel = () => {
+    navigate('/main');
+  };
+
   return (
     <div className="user-maintenance-container">
+      <h2>Mantenimiento de Usuarios</h2>
       <div className="filters">
-        <input
-          type="date"
-          name="inactivityDate"
-          value={filters.inactivityDate}
-          onChange={handleFilterChange}
-          placeholder="Fecha de Inactividad"
-        />
-        <input
-          type="text"
-          name="name"
-          value={filters.name}
-          onChange={handleFilterChange}
-          placeholder="Nombre"
-        />
-        <input
-          type="text"
-          name="idCard"
-          value={filters.idCard}
-          onChange={handleFilterChange}
-          placeholder="Cédula"
-        />
-        <select
-          name="status"
-          value={filters.status}
-          onChange={handleFilterChange}
-        >
-          <option value="">Estado</option>
-          <option value="active">Activo</option>
-          <option value="inactive">Inactivo</option>
-        </select>
-        <input
-          type="date"
-          name="entryDate"
-          value={filters.entryDate}
-          onChange={handleFilterChange}
-          placeholder="Fecha de Ingreso"
-        />
-        <input
-          type="text"
-          name="role"
-          value={filters.role}
-          onChange={handleFilterChange}
-          placeholder="Rol"
-        />
-        <button onClick={handleSearch}>Consultar</button>
+        <div className="filter-group">
+          <label htmlFor="name">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={filters.name}
+            onChange={handleFilterChange}
+            className="name-input"
+          />
+        </div>
+        <div className="filter-group">
+          <label htmlFor="idCard">Cédula</label>
+          <input
+            type="text"
+            id="idCard"
+            name="idCard"
+            value={filters.idCard}
+            onChange={handleFilterChange}
+          />
+        </div>
+        
+        <div className="filter-group">
+          <label htmlFor="entryDate">Fecha de Ingreso</label>
+          <input
+            type="date"
+            id="entryDate"
+            name="entryDate"
+            value={filters.entryDate}
+            onChange={handleFilterChange}
+          />
+        </div>
+        <div className="filter-group role-filter">
+          <label htmlFor="role">Rol</label>
+          <select
+            id="role"
+            name="role"
+            value={filters.role}
+            onChange={handleFilterChange}
+          >
+            <option value="">Seleccione Rol</option>
+            <option value="director/a">Director</option>
+            <option value="maestra">Maestra</option>
+            <option value="padre">Padre de Familia</option>
+            <option value="niño">Niño</option>
+          </select>
+        </div>
+        <div className="filter-group">
+          <label htmlFor="status">Estado</label>
+          <select
+            id="status"
+            name="status"
+            value={filters.status}
+            onChange={handleFilterChange}
+          >
+            <option value="">Seleccione Estado</option>
+            <option value="active">Activo</option>
+            <option value="inactive">Inactivo</option>
+          </select>
+        </div>
+        <div className="button-container">
+          <button className="search-button" onClick={handleSearch}>Consultar</button>
+          <button className="cancel-button" onClick={handleCancel}>Cancelar</button>
+          </div>
       </div>
 
       <table className="user-table">
@@ -106,9 +130,9 @@ const UserMaintenance = () => {
           <tr>
             <th>Nombre</th>
             <th>Cédula</th>
-            <th>Estado</th>
             <th>Fecha de Ingreso</th>
             <th>Rol</th>
+            <th>Estado</th>
             <th>Acciones</th>
           </tr>
         </thead>
@@ -117,13 +141,13 @@ const UserMaintenance = () => {
             <tr key={user.id}>
               <td>{user.name}</td>
               <td>{user.idCard}</td>
-              <td>{user.status}</td>
               <td>{user.entryDate}</td>
               <td>{user.role}</td>
+              <td>{user.status}</td>
               <td>
-                <button onClick={() => handleEdit(user)}>Editar</button>
-                <button onClick={() => handleInactivate(user.id)}>Inactivar</button>
-                <button onClick={() => handleDelete(user.id)}>Eliminar</button>
+                <button className="edit-button" onClick={() => handleEdit(user)}>Editar</button>
+                <button className="inactivate-button" onClick={() => handleInactivate(user.id)}>Inactivar</button>
+                <button className="delete-button" onClick={() => handleDelete(user.id)}>Eliminar</button>
               </td>
             </tr>
           ))}
