@@ -169,16 +169,18 @@
   
   
   
-  .close-button {
+  .close-ex-button {
     background-color: #A569BD;
     color: #fff;
     border: none;
     padding: 8px 12px;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   
-  .close-button:hover {
+  .close-ex-button:hover {
     background-color: #D481F5;
   }
   

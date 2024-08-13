@@ -9,6 +9,7 @@ import RegisterChildrenForm from './components/RegisterChildrenForm';
 import UserMaintenance from './components/UserMaintenance';
 import Reportes from './components/Reportes';
 import Expedientes from './components/Expedientes';
+import ChatForm from './components/ChatForm';
 import './App.css';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/user-maintenance" element={<UserMaintenance />} /> 
         <Route path="/reportes" element={<Reportes />} /> 
         <Route path="/expedientes" element={<Expedientes />} /> 
+        <Route path="/comunicacion" element={<ChatForm />} /> 
       </Routes>
     </Router>
   );

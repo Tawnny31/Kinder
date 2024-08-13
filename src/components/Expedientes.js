@@ -203,7 +203,7 @@ const Expedientes = () => {
         <button onClick={() => handleDownloadPDF([selectedChild])} className="export-individual-button">
           <FontAwesomeIcon icon={faFilePdf} /> Exportar a PDF
         </button>
-        <button className="close-button" onClick={() => setShowDetails(false)}>Cerrar</button>
+        <button className="close-ex-button" onClick={() => setShowDetails(false)}>Cerrar</button>
       </div>
     </div>
   </div>
