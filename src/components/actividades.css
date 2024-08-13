@@ -1,0 +1,44 @@
+/* IconComponent.css */
+
+.marco { display: flex; /* Usar flexbox para centrar el contenido */ 
+    justify-content: center; /* Centrar horizontalmente */ 
+    align-items: center; /* Centrar verticalmente */ 
+    height: 100vh; /* Tomar toda la altura de la ventana */ 
+    margin: 0; /* Eliminar márgenes por defecto del body */
+}
+
+.cuerpo{   
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+.titulo{
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.icon-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */ 
+    gap: 20px; /* Espacio entre los cuadros */ 
+    padding: 20px; /* Espacio alrededor de la cuadrícula */
+    color: #A569BD;
+}
+
+.icon-grid link div{
+    color: #A569BD;
+}
+
+
+.icon-item {
+    display: flex; /* Usar flexbox para centrar contenido */ 
+    flex-direction: column; /* Colocar ícono y texto en columna */ 
+    align-items: center; /* Centrar horizontalmente */ 
+    justify-content: center; /* Centrar verticalmente */ 
+    border: 2px solid #ccc; /* Borde alrededor del cuadro */ 
+    border-radius: 8px; /* Bordes */
+    border-color:#A569BD ;
+    padding: 20px;
+    background-color: white;
+}

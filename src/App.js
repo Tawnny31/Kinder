@@ -12,6 +12,10 @@ import Expedientes from './components/Expedientes';
 import ChatForm from './components/ChatForm';
 import { RegistrarPago, ReciboPago, ControlPagos } from './components/GestionFinanciera'
 import './App.css';
+import Actividades from './components/actividades';
+import ActividadComida from './components/actividadComida';
+import ActividadDormir from './components/actividadDormir';
+import ActividadBaño from './components/actividadBaño';
 
 const App = () => {
   return (
@@ -29,6 +33,10 @@ const App = () => {
         <Route path="/registrar-pago" element={<RegistrarPago />} /> 
         <Route path="/recibo-pago" element={<ReciboPago />} /> 
         <Route path="/control-pago" element={<ControlPagos />} /> 
+        <Route path="/actividades" element={<Actividades />} /> 
+        <Route path="/act-comida" element={<ActividadComida />} /> 
+        <Route path="/act-dormir" element={<ActividadDormir />} /> 
+        <Route path="/act-baño" element={<ActividadBaño />} /> 
       </Routes>
     </Router>
   );
