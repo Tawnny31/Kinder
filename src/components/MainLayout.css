@@ -1,6 +1,7 @@
 /* src/styles/MainLayout.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -110,6 +111,35 @@ body {
 
 .sidebar ul li a.active {
   background-color: #5ad8bf;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.caret-icon {
+  margin-left: 5px;
+}
+
+.submenu {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.submenu li {
+  margin-bottom: 5px;
+}
+
+.submenu li a {
+  padding: 8px;
+  background-color: #c298e2;
+}
+
+.submenu li a:hover {
+  background-color: #48C9B0;
 }
 
 .main-content {
