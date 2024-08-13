@@ -242,3 +242,20 @@ body {
 .close-button:hover {
   background-color: #d481f5;
 }
+
+
+.bienvenidos {
+  background-color: #A569BD;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 400px;
+  width: 300px;
+}
+
+.bienvenidos h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}

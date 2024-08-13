@@ -10,6 +10,7 @@ import UserMaintenance from './components/UserMaintenance';
 import Reportes from './components/Reportes';
 import Expedientes from './components/Expedientes';
 import ChatForm from './components/ChatForm';
+import { RegistrarPago, ReciboPago, ControlPagos } from './components/GestionFinanciera'
 import './App.css';
 
 const App = () => {
@@ -25,6 +26,9 @@ const App = () => {
         <Route path="/reportes" element={<Reportes />} /> 
         <Route path="/expedientes" element={<Expedientes />} /> 
         <Route path="/comunicacion" element={<ChatForm />} /> 
+        <Route path="/registrar-pago" element={<RegistrarPago />} /> 
+        <Route path="/recibo-pago" element={<ReciboPago />} /> 
+        <Route path="/control-pago" element={<ControlPagos />} /> 
       </Routes>
     </Router>
   );

@@ -10,6 +10,7 @@ const MainLayout = () => {
   const [importantDate, setImportantDate] = useState('');
   const [activityDescription, setActivityDescription] = useState('');
   const [showAdminSubmenu, setShowAdminSubmenu] = useState(false);
+  const [showGestFSubMenu, setShowGestFSubMenu] = useState(false);
 
   const handleLogout = () => {
     navigate('/'); // Redirigir a la página de inicio de sesión
@@ -31,6 +32,10 @@ const MainLayout = () => {
   const toggleAdminSubmenu = () => {
     setShowAdminSubmenu(!showAdminSubmenu);
   };
+
+  const toggleGestFSubMenu = () => {
+    setShowGestFSubMenu(!showGestFSubMenu);
+  }
 
   return (
     <div className="main-layout">
@@ -66,16 +71,29 @@ const MainLayout = () => {
                 </ul>
               )}
             </li>
+            <li>
+              <div onClick={toggleGestFSubMenu} className="menu-item">
+              <span>Gestión Financiera</span>
+                <FontAwesomeIcon icon={faCaretDown} className="caret-icon" />
+              </div>
+              {showGestFSubMenu && (
+                <ul className="submenu">
+                  <li><Link to="/registrar-pago">Registrar Pago</Link></li>
+                  <li><Link to="/recibo-pago">Recibo de Pagos</Link></li>
+                  <li><Link to="/control-pago">Control de pagos</Link></li>
+                </ul>
+              )}
+            </li>
             <li><Link to="/matricula">Matrícula</Link></li>
             <li><Link to="/expedientes">Expedientes</Link></li>
             <li><Link to="/plataforma">Plataforma</Link></li>
             <li><Link to="/comunicacion">Comunicación</Link></li>
-            <li><Link to="/financial-management">Gestión Financiera</Link></li>
             <li><Link to="/inventory">Inventario</Link></li>
           </ul>
         </aside>
         <main className="main-content">
-          {/* Aquí va el contenido principal */}
+          {<div class="bienvenidos"><h1>¡Bienvenido!</h1>
+          <img src='/static/media/logo.347a6ba3d825eb7f06e8.jpg' alt='' style={{width: '300px', paddingTop: '50px'}}></img></div>}
         </main>
       </div>
 
