@@ -54,10 +54,10 @@ const MainLayout = () => {
             <li><Link to="/director">Administrativo</Link></li>            
             <li><Link to="/financial-management">Gestión Financiera</Link></li>
             <li><Link to="/inventory">Inventario</Link></li>            
-            <li><Link to="/matricula">Matrícula</Link></li>
-            <li><Link to="/expediente">Expediente</Link></li>
-            <li><Link to="/plataforma">Plataforma</Link></li>            
-            <li><Link to="/comunicacion">Comunicación</Link></li>            
+            <li><Link to="/teachers">Matrícula</Link></li>
+            <li><Link to="/register">Expediente</Link></li>
+            <li><Link to="/parents">Plataforma</Link></li>            
+            <li><Link to="/user-maintenance">Comunicación</Link></li>            
           </ul>
         </aside>
         <main className="main-content">
