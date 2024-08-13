@@ -1,0 +1,67 @@
+/* src/styles/Reportes.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.reportes-container {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+
+.reportes-container h1 {
+  color: #A569BD;
+  margin-bottom: 20px;
+}
+
+.charts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart {
+  flex: 1 1 calc(33.333% - 20px);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.chart h2 {
+  color: #A569BD;
+  margin-bottom: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.export-button, .cancel-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.export-button {
+  background-color: #48C9B0;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.export-button:hover {
+  background-color: #5ad8bf;
+}
+
+.cancel-button {
+  background-color: #A569BD;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #d481f5;
+}

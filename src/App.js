@@ -7,6 +7,7 @@ import RegisterUserForm from './components/RegisterUserForm';
 import MainLayout from './components/MainLayout'; 
 import RegisterChildrenForm from './components/RegisterChildrenForm';
 import UserMaintenance from './components/UserMaintenance';
+import Reportes from './components/Reportes';
 import './App.css';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/register" element={<RegisterUserForm />} />
         <Route path="/register-children" element={<RegisterChildrenForm />} />
         <Route path="/user-maintenance" element={<UserMaintenance />} /> 
+        <Route path="/reportes" element={<Reportes />} /> 
       </Routes>
     </Router>
   );
