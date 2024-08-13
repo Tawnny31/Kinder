@@ -1,0 +1,76 @@
+/* ChildrenList.css */
+.contenedortabla{
+    display: flex;
+    height: 100vh; /* Tomar toda la altura de la ventana */ 
+    margin: 0; /* Eliminar márgenes por defecto del body */
+    box-sizing: border-box;
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+   
+}
+
+.children-table {
+    display: flex;    
+    flex-direction: column; /* Colocar los elementos en columna */
+    border: 1px solid #ccc; /* Borde de la tabla */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */    
+    max-width: 600px; /* Ancho máximo */
+    margin-left: auto; /* Centrar la tabla */
+    margin-right: auto; /* Centrar la tabla */  
+    margin-top: auto; 
+    margin-bottom: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */    
+        
+}
+
+
+.table-header {
+    display: flex;
+    position: relative;
+    background-color: #48C9B0; /* Color de fondo del encabezado */
+    font-weight: bold; /* Negrita para el encabezado */
+    padding: 10px; /* Espaciado interno */
+    border-bottom: 1px solid #ccc; /* Línea inferior del encabezado */
+    justify-content: space-between; /* Espacio entre columnas del encabezado */
+
+}
+
+.table-header span {
+    flex-grow: 1; /* Permitir que los elementos ocupen espacio disponible */
+    text-align: center; /* Alinear texto a la izquierda (puedes cambiar a 'center' o 'right') */
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between; /* Espacio entre nombre e íconos */
+    align-items: center; /* Alinear verticalmente */
+    
+    padding: 10px; /* Espaciado interno de cada fila */
+    border-bottom: 1px solid #eee; /* Línea inferior entre filas */
+}
+
+.table-row:last-child {
+    border-bottom: none; /* Sin borde en la última fila */
+}
+
+.child-name {
+    flex-grow: 1; /* Permitir que el nombre ocupe espacio disponible */
+    text-align: center;
+    color: #A569BD;
+}
+
+.icon-actions {
+    display: flex;
+    gap: 50px; /* Espacio entre los iconos */
+   
+}
+
+.icon {
+    cursor: pointer; /* Cambiar cursor al pasar sobre el icono */
+    color: #A569BD;
+}
+.centrar{
+    justify-content: center; 
+    flex-grow: 1; /* Permitir que los elementos ocupen espacio disponible */
+}
