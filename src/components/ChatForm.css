@@ -140,7 +140,7 @@
     background-color: #2980B9;
 }
 
-.close-button {
+.close-chat-button {
     background-color: #E74C3C;
     color: #fff;
     border: none;
@@ -156,7 +156,7 @@
     justify-content: center;
 }
 
-.close-button:hover {
+.close-chat-button:hover {
     background-color: #C0392B;
 }
 

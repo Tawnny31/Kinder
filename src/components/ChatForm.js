@@ -99,7 +99,7 @@ const ChatForm = () => {
             <>
               <div className="chat-header">
                 <h3>Chat con {selectedParent.name}</h3>
-                <button onClick={handleCloseChat} className="close-button">
+                <button onClick={handleCloseChat} className="close-chat-button">
                   X
                 </button>
               </div>
