@@ -62,12 +62,12 @@ const MainLayout = () => {
                 <ul className="submenu">
                   <li><Link to="/register">Registrar Usuario</Link></li>
                   <li><Link to="/user-maintenance">Mantenimiento de Usuarios</Link></li>
-                  <li><Link to="/Reportes">Reportes</Link></li>
+                  <li><Link to="/reportes">Reportes</Link></li>
                 </ul>
               )}
             </li>
             <li><Link to="/matricula">Matrícula</Link></li>
-            <li><Link to="/expediente">Expedientes</Link></li>
+            <li><Link to="/expedientes">Expedientes</Link></li>
             <li><Link to="/plataforma">Plataforma</Link></li>
             <li><Link to="/comunicacion">Comunicación</Link></li>
             <li><Link to="/financial-management">Gestión Financiera</Link></li>
