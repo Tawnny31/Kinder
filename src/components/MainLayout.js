@@ -84,8 +84,7 @@ const MainLayout = () => {
             {showPlatformSubmenu && (
                 <ul className="submenu">
                   <li><Link to="/actividades">Actividades (Maestro)</Link></li>
-                  {/* <li><Link to="/main">?</Link></li>
-                  <li><Link to="/main">?</Link></li> */}
+                  <li><Link to="/lista-asistencia">Tomar Lista (Maestro)</Link></li>                  
                 </ul>
               )}
             </li>
@@ -103,23 +102,7 @@ const MainLayout = () => {
               )}
             </li>
             <li><Link to="/matricula">Matrícula</Link></li>
-            <li><Link to="/expedientes">Expedientes</Link></li> 
-            <li><Link to="/expedientes">Expedientes</Link></li>               
-
-            <li>             
-            <div onClick={togglePlatformSubmenu} className="menu-item">
-            <span>Plataforma</span>
-                <FontAwesomeIcon icon={faCaretDown} className="caret-icon" />              
-            </div>
-            {showPlatformSubmenu && (
-                <ul className="submenu">
-                  <li><Link to="/actividades">Actividades (Maestro)</Link></li>
-                  <li><Link to="/lista-asistencia">Tomar Lista (Maestro)</Link></li>
-                  <li><Link to="/main">?</Link></li>
-                </ul>
-              )}
-            </li>
-
+            <li><Link to="/expedientes">Expedientes</Link></li>             
             <li><Link to="/comunicacion">Comunicación</Link></li>
             <li><Link to="/inventario">Inventario</Link></li>
           </ul>
