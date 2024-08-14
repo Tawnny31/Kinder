@@ -16,12 +16,9 @@ import Actividades from './components/actividades';
 import ActividadComida from './components/actividadComida';
 import ActividadDormir from './components/actividadDormir';
 import ActividadBaño from './components/actividadBaño';
-<<<<<<< Updated upstream
 import Matricula from './components/Matricula';
 import Inventario from './components/Inventario';
-=======
 import ListaAsistencia from './components/listaAsistencia';
->>>>>>> Stashed changes
 
 const App = () => {
   return (
@@ -43,12 +40,9 @@ const App = () => {
         <Route path="/act-comida" element={<ActividadComida />} /> 
         <Route path="/act-dormir" element={<ActividadDormir />} /> 
         <Route path="/act-baño" element={<ActividadBaño />} /> 
-<<<<<<< Updated upstream
         <Route path="/matricula" element={<Matricula />} /> 
         <Route path="/inventario" element={<Inventario />} /> 
-=======
         <Route path="/lista-asistencia" element={<ListaAsistencia />} /> 
->>>>>>> Stashed changes
       </Routes>
     </Router>
   );
