@@ -16,6 +16,8 @@ import Actividades from './components/actividades';
 import ActividadComida from './components/actividadComida';
 import ActividadDormir from './components/actividadDormir';
 import ActividadBaño from './components/actividadBaño';
+import Matricula from './components/Matricula';
+import Inventario from './components/Inventario';
 
 const App = () => {
   return (
@@ -37,6 +39,8 @@ const App = () => {
         <Route path="/act-comida" element={<ActividadComida />} /> 
         <Route path="/act-dormir" element={<ActividadDormir />} /> 
         <Route path="/act-baño" element={<ActividadBaño />} /> 
+        <Route path="/matricula" element={<Matricula />} /> 
+        <Route path="/inventario" element={<Inventario />} /> 
       </Routes>
     </Router>
   );

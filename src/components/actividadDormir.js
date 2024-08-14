@@ -16,7 +16,7 @@ function ActividadDormir() {
     return (
         <div className='contenedortabla'>       
             
-            <div className="children-table">
+            <div className="dormir-table">
            
             <div style={{textAlign:'center', color: '#A569BD'}}>
                 <h3>Tiempo de sueño</h3>

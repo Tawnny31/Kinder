@@ -16,7 +16,7 @@ function ActividadBaño() {
     return (
         <div className='contenedortabla'>       
             
-            <div className="children-table">
+            <div className="baño-table">
            
             <div className='row' style={{textAlign:'center', color: '#A569BD'}}>
               <h3>Cantidad de veces que va al baño</h3>                     

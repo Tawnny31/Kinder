@@ -15,7 +15,7 @@ function ActividadComida() {
     return (
         <div className='contenedortabla'>       
             
-            <div className="children-table">
+            <div className="comida-table">
            
             <div>
             <DropAct/> 

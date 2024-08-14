@@ -3,7 +3,7 @@
 .marco { display: flex; /* Usar flexbox para centrar el contenido */ 
     justify-content: center; /* Centrar horizontalmente */ 
     align-items: center; /* Centrar verticalmente */ 
-    height: 100vh; /* Tomar toda la altura de la ventana */ 
+    height: 20vh; /* Tomar toda la altura de la ventana */ 
     margin: 0; /* Eliminar márgenes por defecto del body */
 }
 
@@ -13,7 +13,7 @@
     
 }
 .titulo{
-    margin: 0;
+    margin: 200px;
     text-align: center;
     padding: 10px;
 }

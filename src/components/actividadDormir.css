@@ -9,7 +9,7 @@
    
 }
 
-.children-table {
+.dormir-table {
     display: flex;    
     flex-direction: column; /* Colocar los elementos en columna */
     border: 1px solid #ccc; /* Borde de la tabla */
@@ -20,7 +20,8 @@
     margin-right: auto; /* Centrar la tabla */  
     margin-top: auto; 
     margin-bottom: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */   
+    background-color: #fffdfd; 
         
 }
 
