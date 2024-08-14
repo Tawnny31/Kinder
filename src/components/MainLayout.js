@@ -103,9 +103,7 @@ const MainLayout = () => {
               )}
             </li>
             <li><Link to="/matricula">Matrícula</Link></li>
-<<<<<<< Updated upstream
             <li><Link to="/expedientes">Expedientes</Link></li> 
-=======
             <li><Link to="/expedientes">Expedientes</Link></li>               
 
             <li>             
@@ -122,7 +120,6 @@ const MainLayout = () => {
               )}
             </li>
 
->>>>>>> Stashed changes
             <li><Link to="/comunicacion">Comunicación</Link></li>
             <li><Link to="/inventario">Inventario</Link></li>
           </ul>
