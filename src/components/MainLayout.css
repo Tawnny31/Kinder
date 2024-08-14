@@ -259,3 +259,11 @@ body {
   font-size: 24px;
   color: white;
 }
+
+.welcome-text {
+  text-align: justify; /* Justifica el texto */
+  margin: 20px auto;
+  max-width: 800px; /* Ajusta el ancho máximo para mejor presentación */
+  line-height: 1.6; /* Espaciado entre líneas */
+  color: rgb(255, 255, 255);
+}

@@ -109,8 +109,13 @@ const MainLayout = () => {
           </ul>
         </aside>
         <main className="main-content">
-          {<div class="bienvenidos"><h1>¡Bienvenido!</h1>
-          <img src='/static/media/logo.347a6ba3d825eb7f06e8.jpg' alt='' style={{width: '300px', paddingTop: '50px'}}></img></div>}
+        <div className="bienvenidos">
+            <h1>¡Bienvenido!</h1>
+            <img src='/static/media/logo.347a6ba3d825eb7f06e8.jpg' alt='' style={{width: '150px', paddingTop: '50px'}} />
+            <p className="welcome-text">
+              En Kínder Consenti2, nos dedicamos a brindar una experiencia de aprendizaje amorosa y enriquecedora para los más pequeños. Creemos en un ambiente donde cada niño es valorado y respetado, desarrollando sus habilidades a través del juego, la creatividad y la exploración.
+            </p>
+          </div>
         </main>
       </div>
 
