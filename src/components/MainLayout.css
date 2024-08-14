@@ -143,8 +143,7 @@ body {
 }
 
 .main-content {
-  flex-grow: 1;
-  padding: 20px;
+  flex-grow: 1; 
   background: url('../assets/background.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
